@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="player" data-hide="hide">
+        <div class="controls-wrap">
+          <div class="player-controls-btn">
+            <button class="play-prev player-icon"></button>
+            <button class="play player-icon"></button>
+            <button class="play-next player-icon"></button>
+          </div>
+
+          <div class="player-controls-range">
+            <span class="track-name"></span>
+
+            <div class="progress-wrap">
+              <div class="duration">
+                <input class="progress progress-duration" type="range" min="0" max="100" value="0">
+                <div class="progress-time">
+                  <span class="current-time">0:00</span>
+                  &sol;
+                  <span class="duration-time">0:00</span>
+                </div>
+              </div>
+
+              <div class="volume">
+                <button class="volume-btn"></button>
+                <input class="progress progress-volume" type="range" min="0" max="100" value="20">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <ul class="play-list"></ul>
+      </div>
+
+      <div class="weather" data-hide="hide">
+        <input type="text" class="city" />
+        <i class="weather-icon owf"></i>
+        <div class="weather-error"></div>
+        <div class="description-container">
+          <span class="temperature"></span>
+          <span class="weather-description"></span>
+        </div>
+        <div class="wind"></div>
+        <div class="humidity"></div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="slider-icons">
+        <button class="slide-prev slider-icon"></button>
+        <button class="slide-next slider-icon"></button>
+      </div>
+
+      <time class="time" data-hide="hide"></time>
+      <time class="date" data-hide="hide"></time>
+
+      <div class="greeting-container" data-hide="hide">
+        <span class="greeting"></span>
+        <input type="text" class="name" />
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="quote-wrap" data-hide="hide">
+        <button class="change-quote"></button>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright">
+          <time class="date_footer" datetime="2021-10-25">&#169; 2021</time>
+          <a href="https://github.com/alexalehno" target="_blank"><img class="github_lg"
+              src="./assets/svg/github-logo.svg" alt="github logo" /></a>
+          <a href="https://rs.school/js/" target="_blank"><img class="rss_lg"
+              src="https://rs.school/images/rs_school_js.svg" alt="rss logo" /></a>
+        </div>
+
+        <div class="settings-wrap">
+          <button class="settings-btn"></button>
+
+          <div class="settings-block">
+            <div class="block-close">
+              <span class="block-close-line left"></span>
+              <span class="block-close-line right"></span>
+            </div>
+            <h3 class="settings-title set-tranc">Settings</h3>
+
+            <div class="set-block" id="language">
+              <h4 class="set-title set-tranc">Language</h4>
+              <label class="set-label">
+                <input class="set-item" type="radio" value="en" name="lang" id="eng">
+                <span class="set-item-name">eng</span>
+              </label>
+
+              <label class="lang-label set-label">
+                <input class="set-item" type="radio" value="ru" name="lang" id="rus">
+                <span class="set-item-name">rus</span>
+              </label>
+            </div>
+
+            <div class="set-block" id="photo-src">
+              <h4 class="set-title set-tranc">Photo source</h4>
+              <label class="set-label">
+                <input class="set-item photo-src-item" type="radio" value="github" name="photo">
+                <span class="set-item-name">GitHub</span>
+              </label>
+
+              <label class="set-label">
+                <input class="set-item photo-src-item" type="radio" value="unsplash" name="photo">
+                <span class="set-item-name">Unsplash</span>
+              </label>
+
+              <label class="set-label">
+                <input class="set-item photo-src-item" type="radio" value="flickr" name="photo">
+                <span class="set-item-name">Flickr</span>
+              </label>
+            </div>
+
+            <div class="set-block" id="show-hide-block">
+              <h4 class="set-title set-tranc">Show / Hide</h4>
+              <div class="set-item-wrap">
+                <label class="set-label check-label">
+                  <input class="set-item" type="checkbox" name="section">
+                  <span class="set-item-name">Audio</span>
+                </label>
+
+                <label class="set-label check-label">
+                  <input class="set-item" type="checkbox" name="section">
+                  <span class="set-item-name">Weather</span>
+                </label>
+
+                <label class="set-label check-label">
+                  <input class="set-item" type="checkbox" name="section">
+                  <span class="set-item-name">Time</span>
+                </label>
+
+                <label class="set-label check-label">
+                  <input class="set-item" type="checkbox" name="section">
+                  <span class="set-item-name">Date</span>
+                </label>
+
+                <label class="set-label check-label">
+                  <input class="set-item" type="checkbox" name="section">
+                  <span class="set-item-name">Greeting</span>
+                </label>
+
+                <label class="set-label check-label">
+                  <input class="set-item" type="checkbox" name="section">
+                  <span class="set-item-name">Quotes</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./js/quotesExample.js"></script>
+  <script src="./js/translation.js"></script>
+  <script src="./js/date.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/weather.js"></script>
+  <script src="./js/quotes.js"></script>
+  <script src="./js/audio.js"></script>
+  <script src="./js/settings.js"></script>
+  <script src="./js/localStorage.js"></script>
+  <!-- <script src="js/script.js"></script> -->
+</body>
+
+</html>
