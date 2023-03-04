@@ -95,75 +95,81 @@
           <button class="settings-btn"></button>
 
           <div class="settings-block">
-            <div class="block-close">
-              <span class="block-close-line left"></span>
-              <span class="block-close-line right"></span>
-            </div>
-            <h3 class="settings-title set-tranc">Settings</h3>
-
-            <div class="set-block" id="language">
-              <h4 class="set-title set-tranc">Language</h4>
-              <label class="set-label">
-                <input class="set-item" type="radio" value="en" name="lang" id="eng">
-                <span class="set-item-name">eng</span>
-              </label>
-
-              <label class="lang-label set-label">
-                <input class="set-item" type="radio" value="ru" name="lang" id="rus">
-                <span class="set-item-name">rus</span>
-              </label>
+            <div class="grab-wrap">
+              <div class="grab-area">grab</div>
+              <div class="block-close">
+                <span class="block-close-line left"></span>
+                <span class="block-close-line right"></span>
+              </div>
             </div>
 
-            <div class="set-block" id="photo-src">
-              <h4 class="set-title set-tranc">Photo source</h4>
-              <label class="set-label">
-                <input class="set-item photo-src-item" type="radio" value="github" name="photo">
-                <span class="set-item-name">GitHub</span>
-              </label>
+            <div class="settings-inner">
+              <h3 class="settings-title set-tranc">Settings</h3>
 
-              <label class="set-label">
-                <input class="set-item photo-src-item" type="radio" value="unsplash" name="photo">
-                <span class="set-item-name">Unsplash</span>
-              </label>
-
-              <label class="set-label">
-                <input class="set-item photo-src-item" type="radio" value="flickr" name="photo">
-                <span class="set-item-name">Flickr</span>
-              </label>
-            </div>
-
-            <div class="set-block" id="show-hide-block">
-              <h4 class="set-title set-tranc">Show / Hide</h4>
-              <div class="set-item-wrap">
-                <label class="set-label check-label">
-                  <input class="set-item" type="checkbox" name="section">
-                  <span class="set-item-name">Audio</span>
+              <div class="set-block" id="language">
+                <h4 class="set-title set-tranc">Language</h4>
+                <label class="set-label">
+                  <input class="set-item" type="radio" value="en" name="lang" id="eng">
+                  <span class="set-item-name">eng</span>
                 </label>
 
-                <label class="set-label check-label">
-                  <input class="set-item" type="checkbox" name="section">
-                  <span class="set-item-name">Weather</span>
+                <label class="lang-label set-label">
+                  <input class="set-item" type="radio" value="ru" name="lang" id="rus">
+                  <span class="set-item-name">rus</span>
+                </label>
+              </div>
+
+              <div class="set-block" id="photo-src">
+                <h4 class="set-title set-tranc">Photo source</h4>
+                <label class="set-label">
+                  <input class="set-item photo-src-item" type="radio" value="github" name="photo">
+                  <span class="set-item-name">GitHub</span>
                 </label>
 
-                <label class="set-label check-label">
-                  <input class="set-item" type="checkbox" name="section">
-                  <span class="set-item-name">Time</span>
+                <label class="set-label">
+                  <input class="set-item photo-src-item" type="radio" value="unsplash" name="photo">
+                  <span class="set-item-name">Unsplash</span>
                 </label>
 
-                <label class="set-label check-label">
-                  <input class="set-item" type="checkbox" name="section">
-                  <span class="set-item-name">Date</span>
+                <label class="set-label">
+                  <input class="set-item photo-src-item" type="radio" value="flickr" name="photo">
+                  <span class="set-item-name">Flickr</span>
                 </label>
+              </div>
 
-                <label class="set-label check-label">
-                  <input class="set-item" type="checkbox" name="section">
-                  <span class="set-item-name">Greeting</span>
-                </label>
+              <div class="set-block" id="show-hide-block">
+                <h4 class="set-title set-tranc">Show / Hide</h4>
+                <div class="set-item-wrap">
+                  <label class="set-label check-label">
+                    <input class="set-item" type="checkbox" name="section">
+                    <span class="set-item-name">Audio</span>
+                  </label>
 
-                <label class="set-label check-label">
-                  <input class="set-item" type="checkbox" name="section">
-                  <span class="set-item-name">Quotes</span>
-                </label>
+                  <label class="set-label check-label">
+                    <input class="set-item" type="checkbox" name="section">
+                    <span class="set-item-name">Weather</span>
+                  </label>
+
+                  <label class="set-label check-label">
+                    <input class="set-item" type="checkbox" name="section">
+                    <span class="set-item-name">Time</span>
+                  </label>
+
+                  <label class="set-label check-label">
+                    <input class="set-item" type="checkbox" name="section">
+                    <span class="set-item-name">Date</span>
+                  </label>
+
+                  <label class="set-label check-label">
+                    <input class="set-item" type="checkbox" name="section">
+                    <span class="set-item-name">Greeting</span>
+                  </label>
+
+                  <label class="set-label check-label">
+                    <input class="set-item" type="checkbox" name="section">
+                    <span class="set-item-name">Quotes</span>
+                  </label>
+                </div>
               </div>
             </div>
           </div>
@@ -181,7 +187,6 @@
   <script src="./js/audio.js"></script>
   <script src="./js/settings.js"></script>
   <script src="./js/localStorage.js"></script>
-  <!-- <script src="js/script.js"></script> -->
 </body>
 
 </html>

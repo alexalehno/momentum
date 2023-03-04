@@ -55,7 +55,6 @@ function setBg(source) {
 }
 
 async function setBgFlickr() {
-  console.log('photoSrc ->' + photoSrc);
   let timeOfDay = getTimeOfDay(greetingTrans.en);
   let other = 'nature';
   const url = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=1713ee05b31071453a14c93ab6f2ce05&tags=${timeOfDay},${other}&extras=url_l&format=json&nojsoncallback=1`;
@@ -70,7 +69,6 @@ async function setBgFlickr() {
 }
 
 async function setBgUnsplash() {
-  console.log('photoSrc ->' + photoSrc);
   let timeOfDay = getTimeOfDay(greetingTrans.en);
   let other = 'nature';
   const url = `https://api.unsplash.com/photos/random?orientation=landscape&query=${timeOfDay},${other}&client_id=Ql7B3qHA22ax1DBBh5QFL2PcN66bF5lu-sfsS2q9azw`;
@@ -84,7 +82,6 @@ async function setBgUnsplash() {
 
 
 function setBgGitHub() {
-  console.log('photoSrc ->' + photoSrc);
   let timeOfDay = getTimeOfDay(greetingTrans.en);
   let bgNum = randomNum.toString().padStart(2, "0");
 

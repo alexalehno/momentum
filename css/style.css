@@ -423,13 +423,15 @@ body {
   bottom: 150%;
   right: 0;
   width: 340px;
-  padding: 30px;
   text-align: left;
   background-color: rgb(73, 73, 73);
   box-shadow: 0px 0px 60px 25px rgb(0 0 0);
   visibility: hidden;
   opacity: 0;
   transition: .3s;
+  user-select: none;
+
+
 }
 
 .settings-block-show {
@@ -437,16 +439,28 @@ body {
   opacity: 1;
 }
 
+.grab-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grab-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 91%;
+  height: 30px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid rgb(93, 92, 92);
+  color: #b8b8b882;
+  touch-action: none;
+}
+
 .block-close {
-  position: absolute;
-  left: 100%;
-  top: 0;
   width: 30px;
   height: 30px;
-  transform: translateX(-100%) translateY(0%);
   cursor: pointer;
   background-color: rgb(153, 2, 2);
-  z-index: 99;
 }
 
 .block-close-line {
@@ -477,6 +491,10 @@ body {
   transform: rotate(-45deg) translateX(-3px) translateY(9px) scale(0.5);
 }
 
+.settings-inner {
+  padding: 0 30px;
+}
+
 .settings-title {
   padding-bottom: 10px;
   border-bottom: 2px solid black;
@@ -489,6 +507,10 @@ body {
   padding-bottom: 10px;
   margin-top: 20px;
   border-bottom: 1px solid black;
+}
+
+.set-block:last-child {
+  border-bottom: none;
 }
 
 .set-title {
@@ -625,7 +647,10 @@ body {
 
   .settings-block {
     width: 295px;
-    padding: 20px;
+  }
+
+  .settings-inner {
+    padding: 0 20px;
   }
 
   .set-label {
